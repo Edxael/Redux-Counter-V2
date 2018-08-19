@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(128, 243, 242);
+    padding: 25px 150px;
+    text-align: center;
+}
+
+/* ===[ Main Component ]============================================================== */ 
+.menuContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.menuLink{
+    text-decoration: none;
+    border: 2px solid black;
+    margin: 3px;
+    padding: 4px;
+    width: 100px;
+    text-align: center;
+    background-color: rgb(128, 243, 184);
+    font-weight: bolder;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.menuLink:hover{
+    background-color: rgb(138, 235, 34);
+}
+
+.switchContainer{
+    margin-top: 15px;
+    border: 5px solid white;
+    height: 80vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.footerContainer{
+
+}
+
+
+/* ===[ Home Page ]============================================================== */ 
+.HomerHR1{
+    width: 500px;
+}
+
+.buttonsContainer{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* ===[ Control Buttons Gral ]===================================================== */ 
+.controlButton{
+    box-shadow: 5px 5px 5px gray;
+    width: 100px;
+    margin: 15px 4px;
+    background-color: rgba(62, 79, 208, 0.3);
+    height: 35px;
+}
+
+.controlButton:hover{
+    background-color: rgba(134, 90, 201, 0.7);
+}
