@@ -1,17 +1,14 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
 import { resetCount } from '../03-reduxFiles/02-Actions'
+import { store } from '../03-reduxFiles/01-Store'
 
-const dispatchToProps = (dispatch) => {
-    return bindActionCreators( { resetCount }, dispatch )
-}
 
 class ResetButton extends React.Component{
     render(){
 
         const ResetButton = () => {
-            this.props.resetCount()
+            store.dispatch(resetCount())
         }
 
         return(
@@ -22,4 +19,4 @@ class ResetButton extends React.Component{
     }
 }
 
-export default connect(null, dispatchToProps)(ResetButton)
+export default connect(null)(ResetButton)

@@ -1,17 +1,14 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
 import { minusOneToCount } from '../03-reduxFiles/02-Actions'
+import { store } from '../03-reduxFiles/01-Store'
 
-const dispatchToProps = (dispatch) => {
-    return bindActionCreators( { minusOneToCount }, dispatch )
-}
 
 class ButtonMinus extends React.Component{
     render(){
 
         const myFunctionMinus = () => {
-            this.props.minusOneToCount()
+            store.dispatch(minusOneToCount())
         }
 
         return(
@@ -22,4 +19,4 @@ class ButtonMinus extends React.Component{
     }
 }
 
-export default connect(null, dispatchToProps)(ButtonMinus)
+export default connect(null)(ButtonMinus)
