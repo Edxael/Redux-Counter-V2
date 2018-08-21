@@ -12,11 +12,11 @@ const stateReturner = (state) => {
     return state 
 }
 
+
 class Home extends React.Component{
     render(){
 
         let reduxData = store.getState()
-        // console.log("The Value: ", reduxData.count)
 
         return(
             <div>
