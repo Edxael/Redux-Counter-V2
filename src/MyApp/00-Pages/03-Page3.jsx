@@ -11,7 +11,6 @@ const stateReturner = (state) => {
 
 
 class Page03 extends React.Component{
-    // state = { number: '' }
     constructor(props) {
         super(props)
         this.state = { number: '' }
@@ -21,15 +20,12 @@ class Page03 extends React.Component{
         console.log(" -->  Number to add: ", this.state.number)
 
         store.dispatch( addByInput( { incrementBy: parseInt( this.state.number, 0 ) } ) )
-        
-        this.setState({ number: '' })
-        console.log("State After: ", this.state.number)
+        // this.setState({ number: '' })
+        // console.log("Number after clear: ", this.state.number)
     }
 
     render(){
         let reduxData = store.getState()
-
-        
 
         return(
             <div>
@@ -39,7 +35,7 @@ class Page03 extends React.Component{
                 <p>Use input and the button below to add any number to current value, (Negative numbers are OK).</p>
 
                 <input type="text" valu={this.state.number} onChange={ (e) => { this.setState({ number: e.target.value }) } } />
-                <button onClick={this.addAmount} >Add to Value</button>
+                <button onClick={ this.addAmount } >Add to Value</button>
 
             </div>
         )
@@ -47,4 +43,3 @@ class Page03 extends React.Component{
 }
 
 export default connect(stateReturner)(Page03)
-
