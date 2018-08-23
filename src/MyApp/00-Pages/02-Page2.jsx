@@ -5,7 +5,6 @@ import { connect } from 'react-redux'
 
 
 const stateReturner = (state) => {
-    console.log("02-Page: ", state)
     return state 
 }
 

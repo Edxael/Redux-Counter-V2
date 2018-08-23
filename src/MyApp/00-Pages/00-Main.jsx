@@ -9,6 +9,7 @@ import { store } from '../03-reduxFiles/01-Store'
     // Importing Pages
 import HomePage from './01-Home'
 import Page02 from './02-Page2'
+import Page03 from './03-Page3'
 import DefaultNoFound from './99-DefaultNoFound'
 
 
@@ -22,6 +23,7 @@ class Main extends React.Component{
                         <div className="menuContainer">
                             <Link className="menuLink" to="/" >Home</ Link>
                             <Link className="menuLink" to="/2" >Description</ Link>
+                            <Link className="menuLink" to="/3" >Add-#</ Link>
                         </div>
 
                         <hr/>
@@ -30,6 +32,7 @@ class Main extends React.Component{
                             <Switch>
                                 <Route exact path="/" component={HomePage} />
                                 <Route path="/2" component={Page02} />
+                                <Route path="/3" component={Page03} />
                                 <Route component={DefaultNoFound} />
                             </Switch>
                         </div>
