@@ -37,6 +37,7 @@ body{
 
 
 
+
 /* ===[ Home Page ]============================================================== */ 
 .HomerHR1{
     width: 500px;
@@ -62,3 +63,13 @@ body{
 .controlButton:hover{
     background-color: rgba(134, 90, 201, 0.7);
 }
+
+
+
+
+/* ===[ 03-Page3.jsx ]===================================================== */
+.inputIncByInput{
+    /* text-align: center; */
+    padding-left: 7px;
+}
+
