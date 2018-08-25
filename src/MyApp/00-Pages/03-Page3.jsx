@@ -32,7 +32,7 @@ class Page03 extends React.Component{
                 <h1>Increment by:</h1>
                 <h3>The Current value: { reduxData.count }</h3>
 
-                <p>Use input and the button below to add any number to current value. (Negative numbers are OK)</p>
+                <p>Use input and the button below to add any number to current value: (Negative numbers are OK)</p>
 
                 <input value={this.state.number} onChange={ (e) => { this.setState({ number: e.target.value }) } } className="inputIncByInput" type="text" />
                 <button onClick={ this.addAmount } >Add to Value</button>
