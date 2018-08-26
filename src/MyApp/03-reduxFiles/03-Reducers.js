@@ -1,7 +1,10 @@
 import { INCREMENT, DECREMENT, RESET, INCREMENT_BY_INPUT } from './00-Constants.js'
 
 // export const reducer = ( state = { count: 0 }, action ) => {
-export const reducer = ( state = { count: 0 }, action ) => {
+
+const defaultState = { count: 0 }
+
+export const reducer = ( state = defaultState, action ) => {
     switch(action.type){
         case INCREMENT: return { count: state.count + 1 }
         case DECREMENT: return { count: state.count - 1 }
@@ -10,4 +13,3 @@ export const reducer = ( state = { count: 0 }, action ) => {
         default: return state
     }
 }
-
