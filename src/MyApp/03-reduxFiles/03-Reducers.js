@@ -1,6 +1,5 @@
 import { INCREMENT, DECREMENT, RESET, INCREMENT_BY_INPUT } from './00-Constants.js'
 
-// export const reducer = ( state = { count: 0 }, action ) => {
 
 const defaultState = { count: 0 }
 
