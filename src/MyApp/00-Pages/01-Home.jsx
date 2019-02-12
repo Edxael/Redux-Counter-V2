@@ -32,6 +32,7 @@ class Home extends React.Component{
                     <ButtonR1 />
                 </div>
                 
+                <div>Informatio of coutner</div>
             </div>
         )
     }
